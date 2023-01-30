@@ -1,0 +1,218 @@
+[
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      37,
+      36,
+      663654300
+    ],
+    "socks": {
+      "color": "Синий",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 15
+    }
+  },
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      38,
+      11,
+      147352700
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 30
+    }
+  },
+  {
+    "typeOperation": "Приемка",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      38,
+      26,
+      164547000
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 15
+    }
+  },
+  {
+    "typeOperation": "Приемка",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      39,
+      18,
+      71149300
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 16
+    }
+  },
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      39,
+      30,
+      583583100
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 30
+    }
+  },
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      39,
+      40,
+      306350500
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 30
+    }
+  },
+  {
+    "typeOperation": "Приемка",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      23,
+      32,
+      162586800
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 1000
+    }
+  },
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      24,
+      2,
+      688205000
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 1000
+    }
+  },
+  {
+    "typeOperation": "Выдача",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      24,
+      28,
+      655401500
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 10
+    }
+  },
+  {
+    "typeOperation": "Выдача",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      24,
+      28,
+      660402500
+    ],
+    "socks": {
+      "color": "Черный",
+      "size": 23,
+      "cottonPart": 10,
+      "quantity": 10
+    }
+  },
+  {
+    "typeOperation": "Приемка",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      26,
+      12,
+      920869100
+    ],
+    "socks": {
+      "color": "Синий",
+      "size": 25,
+      "cottonPart": 10,
+      "quantity": 2000
+    }
+  },
+  {
+    "typeOperation": "Приемка",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      23,
+      27,
+      4,
+      198127000
+    ],
+    "socks": {
+      "color": "Синий",
+      "size": 25,
+      "cottonPart": 10,
+      "quantity": 1000
+    }
+  }
+]

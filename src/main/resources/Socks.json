@@ -1,0 +1,20 @@
+[
+  {
+    "color": "Черный",
+    "size": 23,
+    "cottonPart": 15,
+    "quantity": 100
+  },
+  {
+    "color": "Черный",
+    "size": 23,
+    "cottonPart": 10,
+    "quantity": 1
+  },
+  {
+    "color": "Синий",
+    "size": 25,
+    "cottonPart": 10,
+    "quantity": 3000
+  }
+]

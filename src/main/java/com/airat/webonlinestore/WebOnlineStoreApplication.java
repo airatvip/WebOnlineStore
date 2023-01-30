@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WebOnlineStoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WebOnlineStoreApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WebOnlineStoreApplication.class, args);
+    }
 
 }
