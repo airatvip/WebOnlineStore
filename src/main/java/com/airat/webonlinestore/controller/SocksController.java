@@ -1,9 +1,10 @@
 package com.airat.webonlinestore.controller;
 
 
+import com.airat.webonlinestore.model.Color;
+import com.airat.webonlinestore.model.Size;
 import com.airat.webonlinestore.model.Socks;
 import com.airat.webonlinestore.service.SocksService;
-import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
@@ -40,9 +41,8 @@ public class SocksController {
             description = "Выберите цвет, размер и минимальное и максимальное количество хлопка"
     )
     @GetMapping()
-    @JsonValue
-    public String getRemainsOfSocks(@RequestParam(defaultValue = "Черный") String color,
-                                    @RequestParam(defaultValue = "23") int size,
+        public String getRemainsOfSocks(@RequestParam("color") Color color,
+                                    @RequestParam("size") Size size,
                                     @RequestParam(defaultValue = "0") int minCottonPart,
                                     @RequestParam(defaultValue = "100") int maxCottonPart) {
         return socksService.getRemainsOfSocks(color, size, minCottonPart, maxCottonPart);

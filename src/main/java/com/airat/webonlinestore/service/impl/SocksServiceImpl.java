@@ -3,6 +3,8 @@ package com.airat.webonlinestore.service.impl;
 import com.airat.webonlinestore.exception.FileErrorException;
 import com.airat.webonlinestore.exception.InCorrectInputException;
 import com.airat.webonlinestore.exception.QuantityException;
+import com.airat.webonlinestore.model.Color;
+import com.airat.webonlinestore.model.Size;
 import com.airat.webonlinestore.model.Socks;
 import com.airat.webonlinestore.service.FileSocksService;
 import com.airat.webonlinestore.service.OperationService;
@@ -10,6 +12,7 @@ import com.airat.webonlinestore.service.SocksService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -26,8 +29,8 @@ public class SocksServiceImpl implements SocksService {
 
     public SocksServiceImpl(FileSocksService fileSocksService, OperationService operationService) {
         this.fileSocksService = fileSocksService;
-
         this.operationService = operationService;
+
     }
 
     @PostConstruct
@@ -90,7 +93,7 @@ public class SocksServiceImpl implements SocksService {
 
 
     @Override
-    public String getRemainsOfSocks(String color, int size, int minCottonPart, int maxCottonPart) {
+    public String getRemainsOfSocks(Color color, Size size, int minCottonPart, int maxCottonPart) {
         int i = 0;
         if (minCottonPart < 0) {
             throw new InCorrectInputException("Процентное содержание хлопка не может быть отрицательным");
@@ -99,8 +102,8 @@ public class SocksServiceImpl implements SocksService {
             throw new InCorrectInputException("Процентное содержание хлопка не может быть больше 100");
         }
         for (int j = 0; j < socks.size(); j++) {
-            if (color.equals(socks.get(j).getColor().getTranslation()) &&
-                    size == (socks.get(j).getSize().getNumber()) &&
+            if (socks.get(j).getColor().equals(color) &&
+                    socks.get(j).getSize().equals(size) &&
                     (socks.get(j).getCottonPart() >= minCottonPart) &&
                     (socks.get(j).getCottonPart() <= maxCottonPart)) {
                 i = i + socks.get(j).getQuantity();

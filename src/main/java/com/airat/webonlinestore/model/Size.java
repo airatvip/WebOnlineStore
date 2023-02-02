@@ -1,5 +1,6 @@
 package com.airat.webonlinestore.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 
@@ -17,5 +18,15 @@ public enum Size {
     @JsonValue
     public int getNumber() {
         return number;
+    }
+
+    public static Size fromInteger(String number) {
+        int number1 = Integer.parseInt(number);
+        for (Size s : Size.values()) {
+            if (s.number == number1) {
+                return s;
+            }
+        }
+        return null;
     }
 }
