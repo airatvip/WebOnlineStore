@@ -1,0 +1,20 @@
+[
+  {
+    "typeOperation": "Списание",
+    "dateTime": [
+      2023,
+      1,
+      30,
+      21,
+      37,
+      36,
+      663654300
+    ],
+    "socks": {
+      "color": "Синий",
+      "size": "23",
+      "cottonPart": 10,
+      "quantity": 15
+    }
+  }
+]
